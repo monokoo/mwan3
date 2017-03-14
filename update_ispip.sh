@@ -18,7 +18,7 @@ update_chinaip() {
 	fi
 	
 	echo "下载chinaip列表..."
-	wget -q --no-check_certificate https://github/monokoo/mwan3/chinaip -O $basepath/chinaip
+	wget -q --no-check_certificate https://raw.githubusercontent.com/monokoo/mwan3/master/chinaip -O $basepath/chinaip
 
 	[ -f "$basepath/chinaip" ] && { 
 		echo "开始添加chinaip IPSET List,请稍候..."
@@ -41,7 +41,7 @@ update_cmcc() {
 	fi
 	
 	echo "下载cmcc列表..."
-	wget -q --no-check_certificate https://github/monokoo/mwan3/cmcc -O $basepath/cmcc
+	wget -q --no-check_certificate https://raw.githubusercontent.com/monokoo/mwan3/master/cmcc -O $basepath/cmcc
 	
 	[ -f "$basepath/cmcc" ] && {
 	        echo "开始添加cmcc IPSET List,请稍候..."
@@ -64,7 +64,7 @@ update_telecom() {
 	fi
 
 	echo "下载telecom列表..."
-	wget -q --no-check_certificate https://github/monokoo/mwan3/telecom -O $basepath/telecom
+	wget -q --no-check_certificate https://raw.githubusercontent.com/monokoo/mwan3/master/telecom -O $basepath/telecom
 
 	[ -f "$basepath/telecom" ] && {
 		echo "开始添加telecom IPSET List,请稍候..."
@@ -87,7 +87,7 @@ update_unicom() {
 	fi
 
 	echo "下载unicom列表..."
-	wget -q --no-check_certificate https://github/monokoo/mwan3/unicom -O $basepath/unicom
+	wget -q --no-check_certificate https://raw.githubusercontent.com/monokoo/mwan3/master/unicom -O $basepath/unicom
 
 	[ -f "$basepath/unicom" ] && {
 		echo "开始添加unicom IPSET List,请稍候..."
